@@ -240,3 +240,88 @@ main .services .btn:hover {
 }
 
 /* End Services */
+
+/* Start About */
+main .about {
+    background-color: #eee;
+    padding-bottom: 50px;
+    padding-top: 50px;
+}
+
+main .about .title::before {
+    content: "";
+    background-color: #7b1798;
+    height: 2px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+    -webkit-transform: translateY(63px);
+    -moz-transform: translateY(63px);
+    -ms-transform: translateY(63px);
+    -o-transform: translateY(63px);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+main .about .title::after {
+    content: "";
+    background-color: #4A00E0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(13px);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(13px);
+    -moz-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+}
+
+main .about .title:hover:before {
+    width: 200px;
+}
+
+main .about .about-title {
+    font-size: 40px;
+    font-weight: 600;
+    margin-top: 8%;
+    padding-left: 35px;
+}
+
+main .about ul li {
+    margin: 10px 0;
+}
+
+main .about ul {
+    margin-left: 20px;
+}
+
+/* End About */
+/* Start Media Query */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .header .h-img {
+        width: 400px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .header .h-info {
+        margin-left: auto;
+        margin-right: auto;
+        width: 82%;
+    }
+}
+
+/* End Media Query */
