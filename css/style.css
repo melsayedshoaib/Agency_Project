@@ -289,7 +289,7 @@ main .about .title::after {
 }
 
 main .about .title:hover:before {
-    width: 200px;
+    width: 140px;
 }
 
 main .about .about-title {
@@ -308,6 +308,74 @@ main .about ul {
 }
 
 /* End About */
+
+/* Start Testimonials */
+
+main .testimonials {
+    margin: 100px 0;
+}
+
+main .testimonials .title::before {
+    content: "";
+    background-color: #7b1798;
+    height: 2px;
+    width: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(63px);
+    -webkit-transform: translateY(63px);
+    -moz-transform: translateY(63px);
+    -ms-transform: translateY(63px);
+    -o-transform: translateY(63px);
+    transition: .3s;
+    -webkit-transition: .3s;
+    -moz-transition: .3s;
+    -ms-transition: .3s;
+    -o-transition: .3s;
+}
+
+main .testimonials .title::after {
+    content: "";
+    background-color: #4A00E0;
+    height: 20px;
+    width: 20px;
+    border-radius: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    display: block;
+    transform: translateY(13px);
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    -webkit-transform: translateY(13px);
+    -moz-transform: translateY(13px);
+    -ms-transform: translateY(13px);
+    -o-transform: translateY(13px);
+}
+
+main .testimonials .title:hover:before {
+    width: 320px;
+}
+
+main .testimonials .testi {
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+
+main .testimonials .testi img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    margin: 0 10px;
+}
+
+/* End Testimonials */
 /* Start Media Query */
 
 @media (min-width: 768px) and (max-width: 1200px) {
@@ -321,6 +389,14 @@ main .about ul {
         margin-left: auto;
         margin-right: auto;
         width: 82%;
+    }
+}
+
+@media (max-width: 331px) {
+
+    main .testimonials .title::before,
+    main .testimonials .title::after {
+        display: none;
     }
 }
 
